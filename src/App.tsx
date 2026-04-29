@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Countdown from "./components/Countdown";
 import HistoryAndDetails from "./components/HistoryAndDetails";
+import DressCode from "./components/DressCode";
 import RSVP from "./components/RSVP";
 import Gifts from "./components/Gifts";
 import Footer from "./components/Footer";
@@ -19,6 +20,7 @@ export default function App() {
         <Hero />
         <Countdown />
         <HistoryAndDetails />
+        <DressCode />
         <RSVP />
         <Gifts />
       </main>

@@ -17,6 +17,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "O Casal", href: "#casal" },
     { name: "Local e Data", href: "#local" },
+    { name: "Traje", href: "#traje" },
     { name: "Confirme sua Presença", href: "#rsvp" },
     { name: "Lista de Presentes", href: "#presentes" },
   ];
