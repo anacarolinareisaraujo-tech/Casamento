@@ -19,8 +19,13 @@ export default function HistoryAndDetails() {
           </h2>
 
           <p className="text-sm md:text-base leading-relaxed tracking-wider font-light text-wedding-dark/80 mb-12">
-            "O matrimônio não é, para um cristão, uma simples instituição social, nem muito menos um remédio para as fraquezas humanas. É uma autêntica vocação sobrenatural... Um grande sacramento em Cristo e na Igreja." <br />
-            <span className="italic mt-2 block text-xs">São Josemaria Escrivá</span>
+            "O matrimônio não é, para um cristão, uma simples instituição
+            social, nem muito menos um remédio para as fraquezas humanas. É uma
+            autêntica vocação sobrenatural... Um grande sacramento em Cristo e
+            na Igreja." <br />
+            <span className="italic mt-2 block text-xs">
+              São Josemaria Escrivá
+            </span>
           </p>
 
           <div className="flex justify-center mb-16">

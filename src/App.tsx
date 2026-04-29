@@ -5,6 +5,7 @@
 
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Countdown from "./components/Countdown";
 import HistoryAndDetails from "./components/HistoryAndDetails";
 import RSVP from "./components/RSVP";
 import Gifts from "./components/Gifts";
@@ -16,6 +17,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <Countdown />
         <HistoryAndDetails />
         <RSVP />
         <Gifts />
