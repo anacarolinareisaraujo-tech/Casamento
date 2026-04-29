@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Montserrat", sans-serif;
+  --font-script: "Great Vibes", cursive;
+
+  --color-wedding-cream: #fdfcf8;
+  --color-wedding-dark: #1a1a18;
+  --color-wedding-sage: #8a9a86;
+  --color-wedding-gold: #c5a059;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-wedding-cream);
+  color: var(--color-wedding-dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.serif {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.script {
+  font-family: "Great Vibes", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn-luxury {
+  background-color: transparent;
+  color: var(--color-wedding-dark);
+  border: 1px solid var(--color-wedding-dark);
+  padding: 12px 24px;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-luxury:hover {
+  background-color: var(--color-wedding-dark);
+  color: var(--color-wedding-cream);
+}
+
+.btn-luxury-filled {
+  background-color: var(--color-wedding-dark);
+  color: var(--color-wedding-cream);
+  border: 1px solid var(--color-wedding-dark);
+  padding: 12px 24px;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-luxury-filled:hover {
+  background-color: transparent;
+  color: var(--color-wedding-dark);
+}
