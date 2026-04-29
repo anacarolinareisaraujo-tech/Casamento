@@ -19,9 +19,8 @@ export default function HistoryAndDetails() {
           </h2>
 
           <p className="text-sm md:text-base leading-relaxed tracking-wider font-light text-wedding-dark/80 mb-12">
-            "Sendo assim, já não são dois, mas uma só carne. Portanto, o que
-            Deus uniu, ninguém separe." <br />
-            <span className="italic mt-2 block text-xs">Mateus 19:6</span>
+            "O matrimônio não é, para um cristão, uma simples instituição social, nem muito menos um remédio para as fraquezas humanas. É uma autêntica vocação sobrenatural... Um grande sacramento em Cristo e na Igreja." <br />
+            <span className="italic mt-2 block text-xs">São Josemaria Escrivá</span>
           </p>
 
           <div className="flex justify-center mb-16">
@@ -86,15 +85,15 @@ export default function HistoryAndDetails() {
             />
             <div>
               <p className="font-medium tracking-widest uppercase text-sm mb-1">
-                Capela de São Miguel Arcanjo
+                Seminário Maior Diocesano de Anápolis
               </p>
               <p className="text-xs text-wedding-dark/60 font-light mb-auto">
-                Rua das Flores, 123 - Centro
-                <br />
-                São Paulo, SP
+                Anápolis, GO
               </p>
               <a
-                href="#"
+                href="https://maps.google.com/maps?q=Semin%C3%A1rio%20Maior%20Diocesano%20An%C3%A1polis"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-block mt-3 text-[10px] tracking-widest uppercase border-b border-wedding-gold text-wedding-gold hover:text-wedding-dark hover:border-wedding-dark transition-colors pb-1"
               >
                 Abrir no Mapa
@@ -113,7 +112,7 @@ export default function HistoryAndDetails() {
         >
           {/* Aesthetic placeholder for Map. In a real app we can embed Google Maps iframe */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14628.18820464!2d-46.6669931!3d-23.5646166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1sen!2sbr!4v1714152541818!5m2!1sen!2sbr"
+            src="https://maps.google.com/maps?q=Semin%C3%A1rio%20Maior%20Diocesano%20An%C3%A1polis&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
