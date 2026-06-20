@@ -66,7 +66,7 @@ export default function HistoryAndDetails() {
             />
             <div>
               <p className="font-medium tracking-widest uppercase text-sm">
-                sábado, 12 de Setembro de 2026
+                sábado, 10 de Julho de 2027
               </p>
             </div>
           </div>
@@ -90,13 +90,13 @@ export default function HistoryAndDetails() {
             />
             <div>
               <p className="font-medium tracking-widest uppercase text-sm mb-1">
-                Seminário Maior Diocesano de Anápolis
+                Capela Santa Rita de Cássia
               </p>
               <p className="text-xs text-wedding-dark/60 font-light mb-auto">
                 Anápolis, GO
               </p>
               <a
-                href="https://maps.google.com/maps?q=Semin%C3%A1rio%20Maior%20Diocesano%20An%C3%A1polis"
+                href="https://maps.google.com/maps?q=Capela+Santa+Rita+de+C%C3%A1ssia+An%C3%A1polis"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block mt-3 text-[10px] tracking-widest uppercase border-b border-wedding-gold text-wedding-gold hover:text-wedding-dark hover:border-wedding-dark transition-colors pb-1"
@@ -117,7 +117,7 @@ export default function HistoryAndDetails() {
         >
           {/* Aesthetic placeholder for Map. In a real app we can embed Google Maps iframe */}
           <iframe
-            src="https://maps.google.com/maps?q=Semin%C3%A1rio%20Maior%20Diocesano%20An%C3%A1polis&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Capela+Santa+Rita+de+C%C3%A1ssia+An%C3%A1polis&t=&z=15&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}

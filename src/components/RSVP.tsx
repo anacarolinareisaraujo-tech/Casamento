@@ -33,7 +33,7 @@ export default function RSVP() {
             Confirme sua Presença
           </h2>
           <p className="text-sm font-light text-wedding-dark/60 tracking-wider mb-12">
-            Por favor, confirme sua presença até o dia 12 de Agosto de 2026.
+            Por favor, confirme sua presença até o dia 10 de Junho de 2027.
           </p>
 
           {isSubmitted ? (
