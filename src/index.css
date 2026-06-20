@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Raleway:wght@300;400;500&family=Alex+Brush&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Cormorant Garamond", serif;
-  --font-sans: "Montserrat", sans-serif;
-  --font-script: "Great Vibes", cursive;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Raleway", sans-serif;
+  --font-script: "Alex Brush", cursive;
 
   --color-wedding-cream: #fdfcf8;
   --color-wedding-dark: #1a1a18;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: var(--color-wedding-cream);
   color: var(--color-wedding-dark);
   -webkit-font-smoothing: antialiased;
@@ -26,11 +26,11 @@ h4,
 h5,
 h6,
 .serif {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Playfair Display", serif;
 }
 
 .script {
-  font-family: "Great Vibes", cursive;
+  font-family: "Alex Brush", cursive;
 }
 
 html {
