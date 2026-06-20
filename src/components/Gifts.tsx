@@ -53,8 +53,8 @@ const gifts = [
     name: "Smart TV",
     description: "Para nossas noites de filmes e maratonas de séries.",
     price: "R$ 2.500,00",
-    store: "Amazon",
-    link: "", // cole aqui o link do produto
+    store: "Mercado Livre",
+    link: "https://www.mercadolivre.com.br/samsung-vision-ai-tv-75-qled-ultra-4k-q7f-2025/p/MLB48957043#polycard_client=search-desktop&be_origin=backend&search_layout=grid&position=1&type=product&tracking_id=a42e18c2-6056-4e87-9590-ac86a45201d3&wid=MLB5411596264&sid=search",
     icon: <Tv strokeWidth={1} size={32} className="text-wedding-sage" />,
   },
   {
