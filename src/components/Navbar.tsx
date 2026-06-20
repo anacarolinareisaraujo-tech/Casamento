@@ -37,7 +37,7 @@ export default function Navbar() {
               href="#"
               className={`text-2xl script ${isScrolled ? "text-wedding-dark" : "text-white drop-shadow-md"}`}
             >
-              C & A
+              A & C
             </a>
           </div>
 

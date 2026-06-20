@@ -28,7 +28,7 @@ export default function Hero() {
           </p>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl text-white script py-4 drop-shadow-lg">
-            Caio & Ana Carolina
+            Ana Carolina & Caio
           </h1>
 
           <div className="w-16 h-px bg-white/60 my-4"></div>

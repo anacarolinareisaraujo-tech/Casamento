@@ -210,7 +210,7 @@ export default function Gifts() {
                   {selectedGift.pixKey}
                 </p>
                 <p className="text-[10px] text-wedding-dark/50 mt-1 uppercase">
-                  Nome: Caio Esper / Ana Carolina
+                  Nome: Ana Carolina Reis / Caio Esper
                 </p>
               </div>
 
