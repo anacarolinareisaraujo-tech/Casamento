@@ -10,8 +10,8 @@ export default function Countdown() {
   } | null>(null);
 
   useEffect(() => {
-    // 10 de Julho de 2027, 16:00
-    const targetDate = new Date("2027-07-10T16:00:00").getTime();
+    // 8 de Julho de 2028, 16:00
+    const targetDate = new Date("2028-07-08T16:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();

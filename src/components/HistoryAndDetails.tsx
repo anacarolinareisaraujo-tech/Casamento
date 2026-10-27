@@ -66,7 +66,7 @@ export default function HistoryAndDetails() {
             />
             <div>
               <p className="font-medium tracking-widest uppercase text-sm">
-                sábado, 10 de Julho de 2027
+                sábado, 8 de Julho de 2028
               </p>
             </div>
           </div>

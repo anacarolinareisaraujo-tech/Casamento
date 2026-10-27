@@ -148,7 +148,7 @@ function WaxSeal() {
   );
 }
 
-export default function EnvelopeIntro() {
+export default function EnvelopeIntro({ onOpen }: { onOpen?: () => void }) {
   // 0 fechado, 1 aba abrindo, 2 aba aberta e cartão subindo
   const [stage, setStage] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -163,6 +163,9 @@ export default function EnvelopeIntro() {
 
   const open = () => {
     if (stage > 0) return;
+    // Chamado direto no clique: os navegadores só deixam tocar áudio
+    // a partir de uma ação do usuário
+    onOpen?.();
     setStage(1);
     setTimeout(() => setStage(2), 600);
     setTimeout(() => setVisible(false), 4200);
@@ -310,7 +313,7 @@ export default function EnvelopeIntro() {
                 className="uppercase tracking-[0.3em] text-wedding-dark/70"
                 style={{ fontSize: "clamp(8px, 1.9vw, 11px)" }}
               >
-                10 · 07 · 2027
+                08 · 07 · 2028
               </p>
             </motion.div>
 

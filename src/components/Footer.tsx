@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="w-12 h-px bg-wedding-sage/50 my-4"></div>
       <p className="text-[10px] uppercase font-light tracking-[0.2em] opacity-60">
         Com a graça de Deus,
-        <br /> 10 de Julho de 2027
+        <br /> 8 de Julho de 2028
       </p>
     </footer>
   );
