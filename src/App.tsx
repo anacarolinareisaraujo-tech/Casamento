@@ -18,6 +18,8 @@ import MusicToggle from "./components/MusicToggle";
 // Arquivo de música em public/
 const MUSIC_SRC = "/la-vie-en-rose.mp3";
 const MUSIC_VOLUME = 0.5;
+// Segundo em que a música começa (e recomeça quando termina)
+const MUSIC_START = 13;
 
 export default function App() {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -28,6 +30,7 @@ export default function App() {
     const audio = audioRef.current;
     if (!audio) return;
     audio.volume = 0;
+    audio.currentTime = MUSIC_START;
     audio
       .play()
       .then(() => {
@@ -55,7 +58,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-wedding-cream relative font-sans">
-      <audio ref={audioRef} src={MUSIC_SRC} loop preload="auto" />
+      <audio
+        ref={audioRef}
+        src={MUSIC_SRC}
+        preload="auto"
+        onEnded={(e) => {
+          e.currentTarget.currentTime = MUSIC_START;
+          e.currentTarget.play().catch(() => {});
+        }}
+      />
       <EnvelopeIntro onOpen={startMusic} />
       {musicPlaying !== null && (
         <MusicToggle playing={musicPlaying} onToggle={toggleMusic} />
