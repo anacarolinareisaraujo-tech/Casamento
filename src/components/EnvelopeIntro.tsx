@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 const ease = [0.65, 0, 0.35, 1] as const;
@@ -9,6 +9,18 @@ const OLIVE_BOTTOM = "#545e3c";
 const OLIVE_BACK = "#3d4630";
 const LINING = "#f6f1e6";
 const GOLD = "url(#env-gold)";
+
+// Fotos de lírios brancos que ficam nos cantos, atrás do envelope
+const LILIES: { src: string; style: CSSProperties }[] = [
+  {
+    src: "https://images.unsplash.com/photo-1567428051128-5f09a0200655?w=1600&q=80&auto=format",
+    style: { right: "-12%", top: "-8%" },
+  },
+  {
+    src: "https://images.unsplash.com/photo-1782736162854-1b72ed92abf3?w=1600&q=80&auto=format",
+    style: { left: "-12%", bottom: "-8%" },
+  },
+];
 
 // Formas do envelope (viewBox 1000 x 700)
 const LEFT = "M0,0 L485,405 L0,700 Z";
@@ -179,12 +191,34 @@ export default function EnvelopeIntro({ onOpen }: { onOpen?: () => void }) {
           className="fixed inset-0 z-[200] flex items-center justify-center overflow-hidden cursor-pointer"
           style={{
             background:
-              "radial-gradient(ellipse at center, #f8f5ee 0%, #e8e1d2 100%)",
+              "radial-gradient(ellipse at center, #34422d 0%, #1b2417 100%)",
           }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.9 }}
           onClick={open}
         >
+          {/* Lírios em volta do convite (fotos do Unsplash) */}
+          {LILIES.map((lily) => (
+            <motion.img
+              key={lily.src}
+              src={lily.src}
+              alt=""
+              aria-hidden="true"
+              draggable={false}
+              className="absolute pointer-events-none select-none"
+              style={{
+                ...lily.style,
+                width: "max(70vw, 75vh)",
+                maskImage: "radial-gradient(closest-side, #000 45%, transparent)",
+                WebkitMaskImage:
+                  "radial-gradient(closest-side, #000 45%, transparent)",
+              }}
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.6, ease: "easeOut" }}
+            />
+          ))}
+
           {/* Gradientes compartilhados pelos desenhos do envelope e do selo */}
           <svg width="0" height="0" className="absolute" aria-hidden="true">
             <defs>
@@ -372,8 +406,8 @@ export default function EnvelopeIntro({ onOpen }: { onOpen?: () => void }) {
 
             {/* Dica */}
             <motion.p
-              className="absolute inset-x-0 text-center uppercase tracking-[0.3em] text-[10px] text-wedding-olive"
-              style={{ top: "112%" }}
+              className="absolute inset-x-0 text-center uppercase tracking-[0.3em] text-[10px] text-wedding-cream"
+              style={{ top: "112%", textShadow: "0 1px 8px rgba(0,0,0,0.8)" }}
               animate={stage >= 1 ? { opacity: 0 } : { opacity: [0.4, 1, 0.4] }}
               transition={
                 stage >= 1
