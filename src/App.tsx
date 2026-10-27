@@ -11,10 +11,12 @@ import DressCode from "./components/DressCode";
 import RSVP from "./components/RSVP";
 import Gifts from "./components/Gifts";
 import Footer from "./components/Footer";
+import EnvelopeIntro from "./components/EnvelopeIntro";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-wedding-cream relative font-sans">
+      <EnvelopeIntro />
       <Navbar />
       <main>
         <Hero />
